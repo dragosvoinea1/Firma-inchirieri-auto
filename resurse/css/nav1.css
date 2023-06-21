@@ -1,0 +1,79 @@
+body {
+  --inaltime-meniu: 45px;
+  --latime-buton: 150px;
+  --grosime-border-menu: 1px;
+  --culoare-meniu: var(--culoare-portocaliu);
+  --culoare-border-buton: black;
+  --culoare-hover: var(--culoare-galben);
+  --timp-tranzitie: 0.2s;
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  width: calc(100vw - 18px);
+  background-color: var(--culoare-meniu);
+  height: var(--inaltime-meniu);
+  top: 0;
+  left: calc(-1 * var(--spatiere-pagina));
+  position: sticky;
+  margin-bottom: 20px;
+}
+
+ul.meniu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+ul.meniu li {
+  width: var(--latime-buton);
+  height: var(--inaltime-meniu);
+  background-color: var(--culoare-meniu);
+  overflow: hidden;
+  text-align: center;
+  border: var(--grosime-border-menu) solid var(--culoare-border-buton);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  transition: all var(--timp-tranzitie) linear;
+}
+ul.meniu li:hover {
+  overflow: visible;
+  background-color: var(--culoare-hover);
+}
+ul.meniu li:hover ul {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+ul.meniu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: var(--inaltime-meniu);
+  line-height: calc(var(--inaltime-meniu) - 2 * var(--grosime-border-menu));
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul.meniu li div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: var(--inaltime-meniu);
+  line-height: calc(var(--inaltime-meniu) - 2 * var(--grosime-border-menu));
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul.meniu ul {
+  padding: 0;
+  margin: 0;
+  width: var(--latime-buton);
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0;
+  transform: scale(0, 0);
+  transform-origin: center top;
+  transition: all var(--timp-tranzitie) linear;
+}

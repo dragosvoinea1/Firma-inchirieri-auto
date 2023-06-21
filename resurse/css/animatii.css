@@ -1,0 +1,50 @@
+/*text care se plimba*/
+body{
+  --culoare-warm-white-fundal:#F5DEB3;
+  --rosu-inchis:#6B0C0C;
+  --culoare-light-salmon:#FFA07A;
+  --culoare-portocaliu:#FFB347;
+  --culoare-galben:#EBD552;
+  --culoare-text:black;
+  --spatiere-pagina:50px;
+  --padding-sectiune:15px;
+}
+.container-text {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+.text-plimba {
+    white-space: nowrap;
+    animation: scrollText 10s linear infinite;
+}
+  
+@keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+.text-coloane {
+  column-count: 2;
+  column-rule: 1px solid black;
+}
+
+.text-coloane p {
+  margin-bottom: 20px;
+}
+
+:root {
+  --text-color: black; /* culoarea textului normal */
+  --selection-background: #FFB347; /* culoarea fundalului textului selectat */
+  --selection-color: #FFF; /* culoarea textului selectat */
+}
+
+::selection {
+  background-color: var(--selection-background);
+  color: var(--selection-color);
+}
+

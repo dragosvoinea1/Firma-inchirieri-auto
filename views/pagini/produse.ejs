@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="VIP Motors offers a wide range of cars for passionate people who want to drive the car of their dreams.">
+        <meta name="keywords" content="Car rental, Dream cars, Great deals, Lamborghini, Ferrari">
+        <link rel="stylesheet" href="/resurse/css/produse.css" type="text/css" />
+        <link rel = "stylesheet" href = "/resurse/css/custom.css">
+        <title>VIP Motors - home</title>
+        <%- include("../fragmente/head") %>     
+        <script type="text/javascript" src=/resurse/js/produse.js></script>
+
+    </head>
+    <body>
+    <%- include("../fragmente/header") %>
+
+    <main>
+        <label> Nume: <input type="text" id="inp-nume"></label>
+
+        <div> Putere Motor:<!-- trebuie sa aiba acelasi name ca sa formeze un grup -->
+            <p><label>Mic (putere_motor &lt; 300)
+                <input id="i_rad1"  name="gr_rad" value="0:300" type="radio"/>
+            </label></p>
+            <p><label>Mediu (300 &le; putere_motor &lt; 600)
+                <input id="i_rad2"  name="gr_rad" value="300:600" type="radio"/>
+            </label>
+            <p><label>Mare(600 &le; putere_motor)
+                <input id="i_rad3" name="gr_rad" value="600:1000000000" type="radio"/>
+            </label>
+            <p><label>Toate
+                <input id="i_rad4" checked name="gr_rad" value="toate" type="radio"/>
+            </label>
+        </div>
+
+
+        <label> Pret minim: <input type="range" id="inp-pret" value="0" min="0"  max="2000000"> <span id="infoRange">(0)</span></label>
+        <label>Select simplu:
+            <select id="inp-brand">
+                <option id="sel-toate" selected value="toate">toate</option>
+                <% for (let opt of locals.optiuni) { %>
+                    <option value="<%- opt.unnest %>"><%- opt.unnest %> </option>
+                <% } %>
+            </select>
+        </label>
+        <label>
+            Are 2 usi?
+            <input class="form-check-input" type="checkbox" id="inp-usi" name="Checkbox" value="checkboxValue">
+        </label>
+        <p>
+        <button id="filtrare">Filtreaza</button> 
+
+        <button id="resetare">Reseteaza</button><br/>
+        <button id="sortCrescNume">Sorteaza crescator dupa pret si nume</button>
+        <button id="sortDescrescNume">Sorteaza descrescator dupa pret si nume</button>
+        
+        </p>
+        
+        <p id="p-suma">Apăsați Alt+"c" pentru suma preturilor masinilor afișate. </p>
+        <section id="produse">
+            <h2>Produse</h2>
+            <div class="grid-produse">
+                <% for( let prod of locals.produse) { %>
+                    <article class="produs" >
+                        <h3 class="nume">Nume: <a href="/produs/<%-prod.id %>" ><span class="val-nume"><%- prod.brand%> <%- prod.model%></span></a></h3>
+                        <div class="info-prod">
+                            <p class="pret">Pret: <span class="val-pret"><%- prod.pret%></span></p>
+                            <p class="putere_motor">Putere Motor: <span class="val-putere_motor"><%- prod.putere_motor%></span></p>
+                        </div>
+                        <div><p class="brand">Brand:<span class="val-brand"><%- prod.brand%></span></p></div>
+                            <p class="doua_usi">Doua usi: <span class="val-usi"><%- prod.doua_usi%></span></p>
+                        <figure>
+                            <a href="/produs/<%-prod.id %>" ><img src="/resurse/imagini/produse/<%- prod.imagine %>" style="width:50%;height:auto;" alt="[imagine <%- prod.nume %>]" /></a>
+                        </figure>
+                        <label class="selecteaza-cos">
+                            Selectează:<br/>
+                            <input type="checkbox" class="select-cos" value="<%-prod.id %>" autocomplete="off">
+                        </label>
+                    </article>
+                <% }%>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,387 @@
+.car-section .car-image {
+  width: 700px;
+  height: 400px;
+}
+
+html{
+  font-size:18px;
+}
+
+body{
+  --culoare-warm-white-fundal:#F5DEB3;
+  --rosu-inchis:#6B0C0C;
+  --culoare-light-salmon:#FFA07A;
+  --culoare-portocaliu:#FFB347;
+  --culoare-galben:#EBD552;
+  --culoare-text:black;
+  --spatiere-pagina:50px;
+  --padding-sectiune:15px;
+}
+
+
+body{
+  background-color: var(--culoare-warm-white-fundal);
+  color:var(--culoare-text);
+  padding-left: var(--spatiere-pagina);
+  padding-right:var(--spatiere-pagina);
+}
+
+body.dark{
+  --culoare-warm-white-fundal:#ab6200; 
+  --rosu-inchis:#9A0200; 
+  --culoare-light-salmon:#7B3F00; 
+  --culoare-portocaliu:#b36403; 
+  --culoare-galben:#A38F21; 
+  --culoare-text:#FFFFFF; 
+  text-shadow:0px 0px 2px black,0px 0px 1px black,0px 0px 1px black;
+  --spatiere-pagina:50px;
+  --padding-sectiune:15px;
+}
+
+#tema {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.tabel-b {
+  border-collapse: separate;
+  border: 2px solid var(--rosu-inchis);
+}
+
+.calendar-b{
+  border-collapse: separate;
+  border: 2px solid var(--rosu-inchis);
+}
+
+#grid-pagina {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "z-prezentare z-prezentare z-prezentare"
+    "z-prezentare z-prezentare z-prezentare"
+    "z-calendar z-tabel  z-anunturi"
+    "z-utilizatori-lista z-tabel  z-anunturi"
+    "z-utilizatori-lista z-utilizatori-statistici  z-site-server"
+    "z-diverse z-diverse z-diverse ";
+  grid-gap: 20px 15px;
+}
+
+
+
+#prezentare{ /* 1 */
+  grid-area: z-prezentare;
+}
+#tabel{ /* 2 */
+  grid-area: z-tabel;
+}
+#calendar{ /* 3 */
+  grid-area: z-calendar;
+}
+#anunturi{ /* 4 */
+  grid-area: z-anunturi;
+}
+#utilizatori-lista{ /* 5 */
+  grid-area: z-utilizatori-lista;
+}
+#utilizatori-statistici{ /* 6 */
+  grid-area: z-utilizatori-statistici;
+}
+#site-server{ /* 7 */
+  grid-area: z-site-server;
+}
+#diverse{ /* 8 */
+  grid-area: z-diverse;
+}
+
+.border{
+  border: 2px solid var(--rosu-inchis);
+  padding: 5px;
+}
+
+.taburi-iframe {
+  align-self:center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.taburi-iframe a {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-color: var(--rosu-inchis);
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid var(--rosu-inchis);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  transition: background-color 0.5s ease;
+  text-decoration: none;
+}
+
+.taburi-iframe a:last-child {
+  margin-right: 0;
+}
+
+.taburi-iframe a:hover {
+  background-color: var(--culoare-portocaliu);
+  border-color: var(--culoare-portocaliu);
+}
+
+.container-iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+
+.border-iframe{
+  border: 4px solid var(--rosu-inchis);
+  margin:0 auto;
+  display: flex;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent; 
+  border-left: 4px solid grey; 
+  border-right: 4px solid grey; 
+  border-radius: 40px; 
+  height: 5px; 
+  width: 7.5px;   
+  padding: 10px;
+  transition: all 0.8s ease;
+  opacity: 0.7;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 9px solid grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s linear;
+  z-index:100;
+}
+
+.back-to-top:hover .triangle {
+  border-bottom: 10px solid #ff6600;
+  transform: translate(-50%, -100%);
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--culoare-galben);
+  color: #333;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.banner{
+  display:none;
+}
+
+.watermark{
+  display:none;
+}
+
+.back-to-top:hover .tooltip {
+  visibility: visible;
+  background-color: var(--culoare-light-salmon);
+  opacity: 1;
+  top: -50px;
+  transform: translate(-50%, -50%);
+}
+
+/*table*/
+
+
+.my-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid var(--rosu-inchis);
+  overflow-x: auto;
+}
+
+.my-table th,td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.my-table th {
+  background-color: var(--culoare-light-salmon);
+}
+
+.my-table tbody tr:nth-child(even) {
+  background-color: var(--culoare-portocaliu);
+}
+
+.my-table tbody tr:nth-child(odd) {
+  background-color: var(--culoare-galben);
+}
+
+.my-table tfoot{
+  background-color: var(--culoare-light-salmon);
+}
+
+.my-table tbody tr:hover {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  transition: outline 0.5s ease;
+}
+
+.my-table caption {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*stilizare linkuri - nu prea bine*/
+a.linka {
+  color: var(--culoare-light-salmon); 
+  background-position: center;
+  background-size: 100% 0;
+  transition: background-size 1s; 
+}
+
+
+a.linka:visited {
+  color: green; 
+}
+
+
+a.linka[href^="http"]:before {
+  content: "⮳ ";
+  font-size: 1.5em; 
+}
+
+a.linka[href^="http"]:hover::before {
+  color: blueviolet; 
+}
+
+
+a.linka {
+  background-image: radial-gradient(circle, red 0%, red 40%, red 60%, transparent 80%, transparent 100%);
+}
+
+
+a.linka:hover {
+  background-size: 80% 100%;
+}
+
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ul.meniu{
+    display:none !important;
+  }
+
+  .banner {
+    display:block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px dotted black;
+    text-align: center;
+  }
+  
+  .car-image{
+    display:none;
+  }
+
+  .container-iframe{
+    display:none;
+  }
+  
+  .taburi-iframe{
+    display:none;
+  }
+
+  .border-iframe{
+    display:none;
+  }
+
+
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration: underline;
+  }
+  
+  footer {
+    page-break-before: always;
+  }
+  
+  #grid-pagina {
+    display: block;
+    grid-template-columns:1fr ;
+    grid-template-areas:
+      "z-prezentare"
+      "z-prezentare"
+      "z-calendar"
+      "z-tabel"
+      "z-anunturi"
+      "z-utilizatori-lista"
+      "z-utilizatori-statistici"
+      "z-site-server"
+      "z-diverse";
+    grid-gap: 10px;
+  }
+
+  
+
+  .watermark {
+    display:flex;
+    position: fixed;
+    bottom: 0;
+    right: 12px;
+    width: 100px;
+    height: 2cm;
+    padding: 5px;
+    border: 3px double;
+    opacity: 0.65;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+  @page {
+    size: A4 landscape;
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+    margin-top: 0cm;
+    margin-bottom: 1.8cm;
+  }
+}

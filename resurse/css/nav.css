@@ -1,0 +1,227 @@
+#ch-menu, #hamburger {
+    display: none;
+  }
+
+body{
+    --inaltime-meniu: 45px;
+    --latime-buton: 150px;
+    --grosime-border-menu: 1px;
+    --culoare-meniu: var(--culoare-portocaliu);
+    --culoare-border-buton: black;
+    --culoare-hover: var(--culoare-galben);
+    --timp-tranzitie: 0.2s;
+}
+
+body.dark{
+    --culoare-meniu: #ffb24767;
+    --culoare-hover: #ebd552;
+}
+
+nav{
+    padding: 0;
+    margin: 0;
+    width: calc(100vw - 18px);
+    background-color: var(--culoare-meniu);
+    height: var(--inaltime-meniu);
+    top: 0;
+    left:calc(-1 * var(--spatiere-pagina));
+    position: sticky;
+    margin-bottom: 20px;
+}
+
+ul.meniu{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding:0;
+    margin:0;
+}
+
+ul.meniu>li{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: var(--latime-buton);
+}
+
+
+ul.meniu li{
+    width:var(--latime-buton);
+    height:var(--inaltime-meniu);
+    background-color: var(--culoare-meniu);
+    overflow: hidden; 
+    text-align: center;
+    border: var(--grosime-border-menu) solid var(--culoare-border-buton);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    transition: all var(--timp-tranzitie) linear;
+}
+
+ul.meniu ul{
+    padding: 0;
+    margin: 0;
+    width:var(--latime-buton);
+    box-sizing: border-box;
+    position:relative;
+    opacity: 0;
+    transform:scale(0, 0);
+    transform-origin:center top;
+    transition: all var(--timp-tranzitie) linear;
+}
+
+ul.meniu li:hover{
+    overflow:visible;
+    background-color: var(--culoare-hover);
+}
+
+ul.meniu li:hover ul{
+    opacity: 1;
+    transform:scale(1, 1);
+}
+
+ul.meniu li a, ul.meniu li div{
+    display: block;
+    width:100%;
+    height:100%;
+    line-height:var(--inaltime-meniu);
+    line-height: calc(var(--inaltime-meniu) - 2 * var(--grosime-border-menu));
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+@media (min-width: 767px) {
+    
+    ul.meniu li:nth-child(1) div {
+        overflow: hidden;
+        position: relative;
+        
+    }
+  }
+
+ul.meniu li:nth-child(1) div::before {
+    content: "Home";
+    position: absolute;
+    left: 0;
+    top: -50px;
+    height: 10px;
+    opacity:50%;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0.1));
+    transition: all 0.8s linear;
+}
+
+ul.meniu li:nth-child(1) div:hover::before {
+    top: 0;
+    
+}
+
+@media (min-width: 767px) {
+    
+    ul.meniu li:nth-child(2) div {
+        overflow: hidden;
+        position: relative;
+        
+    }
+  }
+
+ul.meniu li:nth-child(2) div::before {
+    content: "About us";
+    position: absolute;
+    left: 0;
+    top: -50px;
+    height: 10px;
+    opacity:50%;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0.1));
+    transition: all 0.8s linear;
+}
+
+ul.meniu li:nth-child(2) div:hover::before {
+    top: 0;
+    
+}
+
+@media (min-width: 767px) {
+    
+    ul.meniu li:nth-child(3) div {
+        overflow: hidden;
+        position: relative;
+        
+    }
+  }
+
+ul.meniu li:nth-child(3) div::before {
+    content: "Brands";
+    position: absolute;
+    left: 0;
+    top: -50px;
+    height: 10px;
+    opacity:50%;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0.1));
+    transition: all 0.8s linear;
+}
+
+ul.meniu li:nth-child(3) div:hover::before {
+    top: 0;
+    
+}
+
+@media (min-width: 767px) {
+    
+    ul.meniu li:nth-child(4) div {
+        overflow: hidden;
+        position: relative;
+        
+    }
+  }
+
+ul.meniu li:nth-child(4) div::before {
+    content: "Our cars";
+    position: absolute;
+    left: 0;
+    top: -50px;
+    height: 10px;
+    opacity:50%;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0.1));
+    transition: all 0.8s linear;
+}
+
+ul.meniu li:nth-child(4) div:hover::before {
+    top: 0;
+    
+}
+
+@media (min-width: 767px) {
+    
+    ul.meniu li:nth-child(5) div {
+        overflow: hidden;
+        position: relative;
+        
+    }
+  }
+
+ul.meniu li:nth-child(5) div::before {
+    content: "Contact";
+    position: absolute;
+    left: 0;
+    top: -50px;
+    height: 10px;
+    opacity:50%;
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0.1));
+    transition: all 0.8s linear;
+}
+
+ul.meniu li:nth-child(5) div:hover::before {
+    top: 0;
+    
+}
+
+#acasa-mediu{
+    display: none;
+}

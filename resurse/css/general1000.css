@@ -1,0 +1,38 @@
+html{
+    font-size:16px;
+}
+
+
+body{
+    --spatiere-pagina:30px;
+    --padding-sectiune:10px;
+}
+
+
+
+/*#grid-pagina {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-areas:
+        "z-prezentare z-prezentare z-prezentare"
+        "z-prezentare z-prezentare z-prezentare"
+        "z-calendar z-tabel  z-anunturi"
+        "z-utilizatori-lista z-tabel  z-anunturi"
+        "z-utilizatori-lista z-utilizatori-statistici  z-site-server"
+        "z-diverse z-diverse z-diverse ";
+    grid-gap: 15px 10px;
+  }*/
+
+  #grid-pagina {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+        "z-prezentare  z-prezentare"
+        "z-prezentare z-prezentare"
+        "z-calendar   z-anunturi"
+        "z-tabel z-utilizatori-lista"
+        "z-anunturi z-utilizatori-lista "
+        "z-utilizatori-lista z-site-server"
+        "z-diverse  z-diverse ";
+    grid-gap: 15px 10px;
+  }

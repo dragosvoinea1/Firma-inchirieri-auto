@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="VIP Motors offers a wide range of cars for passionate people who want to drive the car of their dreams.">
+        <meta name="keywords" content="Car rental, Dream cars, Great deals, Lamborghini, Ferrari">
+        
+        <title>VIP Motors - home</title>
+        <%- include("../fragmente/head") %>     
+        <link href="/resurse/css/produs.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+    <%- include("../fragmente/header") %>
+
+    <main>
+        <section>
+            <h2>Descriere masina</h2>
+                <article id="art-produs">
+                    <h3><span class="nume"><%- locals.prod.nume %></span></h3>
+                    <p>Pret: <span class="pret"><%- locals.prod.pret %> </span></p>
+                    <p>Descriere: <span class="descriere"><%- locals.prod.descriere %> </span></p>
+                    <p>Putere motor: <span class="putere_motor"><%- locals.prod.putere_motor %> </span></p>
+                    <p>Kilometraj: <span class="kilometraj"><%- locals.prod.kilometraj %> </span></p>
+                    <p>Culoare: <span class="culoare"><%- locals.prod.culoare %> </span></p>
+                    <p>Brand: <span class="brand"><%- locals.prod.brand %> </span></p>
+                    <p>Model: <span class="model"><%- locals.prod.model %> </span></p>   
+                    <p>Tip combustibil: <span class="tip_combustibil"><%- locals.prod.tip_combustibil %> </span></p>
+                    <p>Data adăugare: <span class="data_adaugare"><%- locals.prod.data_adaugare %> </span></p>
+                    <figure class="imag-produs">
+                        <img  src="/resurse/imagini/produse/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.nume %>]" />
+                    </figure>    
+                </article>
+            
+        </section>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>

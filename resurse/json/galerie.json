@@ -1,0 +1,257 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"descriere":"Porsche 911 Carrera S Red",
+			"sfert_ora":"1",
+			"ora":"11",
+			"license":"CC-BY",
+			"fisier":"imagine-1-sfert-1.png"
+		},
+		{
+			"descriere":"Laborghini Huracan Blue",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-2-sfert-1.png"
+		},
+		{
+			"descriere":"Ferrari 488 Red",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-3-sfert-1.png"
+
+		},
+		{
+			"descriere":"Lamborghini Aventador White",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-4-sfert-1.png"
+		},
+		{
+			"descriere":"Mercedes G Class Black",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-5-sfert-1.png"
+		},
+		{
+			"descriere":"Lamborghini Urus Yellow",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-6-sfert-1.png"
+		},
+		{
+			"descriere":"Porsche Panamera Black",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-7-sfert-1.png"
+		},
+		{
+			"descriere":"Ferrari F8 Red",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-8-sfert-1.png"
+		},
+		{
+			"descriere":"Lamborghini Gallardo Black",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-9-sfert-1.png"
+		},
+		{
+			"descriere":"Aston Martin Vanquish Grey",
+			"sfert_ora":"1",
+			"ora":"11",
+			"fisier":"imagine-10-sfert-1.png"
+		},
+
+		{
+			"descriere":"Porsche 911 Carrera 4S Blue",
+			"sfert_ora":"2",
+			"ora":"11",
+			"license":"CC-BY",
+			"fisier":"imagine-1-sfert-2.png"
+		},
+		{
+			"descriere":"Ferrari 488 Yellow",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-2-sfert-2.png"
+		},
+		{
+			"descriere":"Lamborghini Urus Green",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-3-sfert-2.png"
+
+		},
+		{
+			"descriere":"Lamborghini Aventador SVJ Green",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-4-sfert-2.png"
+		},
+		{
+			"descriere":"Ferrari Portofino Red",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-5-sfert-2.png"
+		},
+		{
+			"descriere":"Porsche Cayenne Black",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-6-sfert-2.png"
+		},
+		{
+			"descriere":"Mercedes G Class Blue",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-7-sfert-2.png"
+		},
+		{
+			"descriere":"Mercedes AMG GT S Yellow",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-8-sfert-2.png"
+		},
+		{
+			"descriere":"Aston Martin DBX Black",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-9-sfert-2.png"
+		},
+		{
+			"descriere":"Porsche 911 GT2 RS White",
+			"sfert_ora":"2",
+			"ora":"11",
+			"fisier":"imagine-10-sfert-2.png"
+		},
+
+		{
+			"descriere":"Porsche 911 Turbo S Black",
+			"sfert_ora":"3",
+			"ora":"11",
+			"license":"CC-BY",
+			"fisier":"imagine-1-sfert-3.png"
+		},
+		{
+			"descriere":"Ferrari F8 White",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-2-sfert-3.png"
+		},
+		{
+			"descriere":"Bugatti Veyron Black",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-3-sfert-3.png"
+
+		},
+		{
+			"descriere":"Porsche Cayman GT4 Red",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-4-sfert-3.png"
+		},
+		{
+			"descriere":"Ferrari Purosangue Red",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-5-sfert-3.png"
+		},
+		{
+			"descriere":"Lamborghini Urus Red",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-6-sfert-3.png"
+		},
+		{
+			"descriere":"Lamborghini Aventador SV Blue",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-7-sfert-3.png"
+		},
+		{
+			"descriere":"Ferrari F40 Red",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-8-sfert-3.png"
+		},
+		{
+			"descriere":"Porsche 911 GT3 RS Green",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-9-sfert-3.png"
+		},
+		{
+			"descriere":"Lamborghini Huracan EVO Red",
+			"sfert_ora":"3",
+			"ora":"11",
+			"fisier":"imagine-10-sfert-3.png"
+		},
+
+		{
+			"descriere":"Porsche 911 Turbo S Red",
+			"sfert_ora":"4",
+			"ora":"11",
+			"license":"CC-BY",
+			"fisier":"imagine-1-sfert-4.png"
+		},
+		{
+			"descriere":"Aston Martin DBX White",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-2-sfert-4.png"
+		},
+		{
+			"descriere":"Lamboghini Urus White",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-3-sfert-4.png"
+
+		},
+		{
+			"descriere":"Ferrari 488 Pista Yellow",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-4-sfert-4.png"
+		},
+		{
+			"descriere":"Lamborghini Huracan Performante White",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-5-sfert-4.png"
+		},
+		{
+			"descriere":"Mercedes G Class White",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-6-sfert-4.png"
+		},
+		{
+			"descriere":"Ferrari Purosangue Black",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-7-sfert-4.png"
+		},
+		{
+			"descriere":"Mercedes AMG GT R Grey",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-8-sfert-4.png"
+		},
+		{
+			"descriere":"Porsche Panamera Turbo S White",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-9-sfert-4.png"
+		},
+		{
+			"descriere":"Mercedes SL63 AMG Grey",
+			"sfert_ora":"4",
+			"ora":"11",
+			"fisier":"imagine-10-sfert-4.png"
+		}
+
+	]
+}
